@@ -24,6 +24,19 @@ appディレクトリで以下を実行
 yarn test
 ```
 
+## react-testing-libralyについて
+https://testing-library.com/docs/react-testing-library/intro
+- afterEach(cleanup)と記述しています。これは各テストの実行後に必ず呼ばれる必要があります。
+- renderはreact-testing-libraryの提供する関数です。返り値はobjectになっており、様々なコンポーネントセレクタを含んでいます。
+expect: アサーションのこと(react-testing-libraly)  
+toBeTruthy: は if ステートメントが真であるとみなすものに一致します(jestのマッチャーズ)  
+fireEvent: DOM イベントを発生させるための便利なメソッドです。デフォルトの eventProperties だけでなく、完全なリストは src/event-map.js を参照してください  
+https://testing-library.com/docs/react-testing-library/api#render  
+https://testing-library.com/docs/dom-testing-library/api-queries/#queries
+https://qiita.com/taneba/items/b21f5fee17eb593b30c8
+https://jestjs.io/docs/ja/using-matchers
+https://testing-library.com/docs/dom-testing-library/api-events/
+
 ## Snapshot
 file: Link.test.js
 
