@@ -18,3 +18,8 @@ docker run -it -d --name react-component-test -p 3000:3000 -v `pwd`:/usr/src/app
 
 完了
 
+## テスト実行方法
+appディレクトリで以下を実行
+```
+yarn test
+```
